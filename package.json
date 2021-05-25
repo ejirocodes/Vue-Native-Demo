@@ -9,14 +9,23 @@
   },
   "dependencies": {
     "expo": "~41.0.1",
+    "expo-camera": "^11.0.3",
+    "expo-location": "^12.0.4",
+    "expo-permissions": "^12.0.1",
     "expo-status-bar": "~1.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-reanimated": "^2.1.0",
+    "react-native-web": "~0.13.12",
+    "vue-native-core": "0.2.0",
+    "vue-native-helper": "0.2.0",
+    "vue-native-router": "^0.2.1",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0"
+    "@babel/core": "7.0.0",
+    "vue-native-scripts": "0.2.0"
   },
   "private": true
 }
