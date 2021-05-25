@@ -16,7 +16,7 @@
 
     <!-- Network image -->
     <image
-      :style="{ width: 500, height: 350 }"
+      :style="{ width: 200, height: 120 }"
       :source="{
         uri:
           'https://images.unsplash.com/photo-1621570074981-ee6a0145c8b5?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
@@ -24,9 +24,10 @@
     />
     <!-- Static image -->
     <image
-      :style="{ width: 500, height: 350 }"
+      :style="{ width: 200, height: 120 }"
       :source="require('./assets/photo.jpg')"
     />
+    <!-- local image -->
     <image
       :style="{ width: 66, height: 58 }"
       :source="{
