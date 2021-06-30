@@ -18,8 +18,7 @@
     <image
       :style="{ width: 200, height: 120 }"
       :source="{
-        uri:
-          'https://images.unsplash.com/photo-1621570074981-ee6a0145c8b5?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+        uri: 'https://images.unsplash.com/photo-1621570074981-ee6a0145c8b5?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
       }"
     />
     <!-- Static image -->
@@ -31,8 +30,7 @@
     <image
       :style="{ width: 66, height: 58 }"
       :source="{
-        uri:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg==',
+        uri: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg==',
       }"
     />
     <button
@@ -47,6 +45,11 @@
     <text>Longitude: {{ longitude }}</text>
 
     <text class="text-error">{{ errorMessage }}</text>
+    <view>
+      <text v-for="user in users" :key="user.id">
+        Email: {{ user.email }}
+      </text>
+    </view>
   </view>
 </template>
 
@@ -66,6 +69,18 @@ export default {
       user: {
         country: "",
       },
+      users: [
+        {
+          id: 1,
+          name: "Ejiro",
+          email: "ejiroasiuhu10@gmailc.com",
+        },
+        {
+          id: 2,
+          name: "Sam",
+          email: "samueljinx@gmail.com",
+        },
+      ],
     };
   },
   methods: {
